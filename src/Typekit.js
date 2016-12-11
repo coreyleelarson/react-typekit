@@ -2,13 +2,13 @@
 import React, { PropTypes } from 'react';
 import buildScript from './utilities/buildScript';
 
-const Typekit = ({ id }) => {
-  const script = buildScript(id);
-  return id ? (<script dangerouslySetInnerHTML={{ __html: script }} />) : false;
+const Typekit = ({ kitId }) => {
+  const script = buildScript(kitId);
+  return kitId ? (<script dangerouslySetInnerHTML={{ __html: script }} />) : false;
 };
 
 Typekit.propTypes = {
-  id: PropTypes.string,
+  kitId: PropTypes.string,
 };
 
 export default Typekit;

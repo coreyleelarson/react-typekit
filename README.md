@@ -8,6 +8,7 @@ npm install --save react-typekit
 ```
 
 ## Usage
+Pass your Typekit Kit ID as a prop to the Typekit component. You can find this ID by logging into [Adobe Typekit](https://typekit.com/).
 ```javascript
 import React from 'react';
 import Typekit from 'react-typekit';
@@ -16,7 +17,7 @@ const HtmlLayout = () => (
   <html>
     <body>
       <h1>My Example React Component</h1>
-      <Typekit id="abc123" />
+      <Typekit kitId="abc123" />
     </body>
   </html>
 );
