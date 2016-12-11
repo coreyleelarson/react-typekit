@@ -1,6 +1,6 @@
 {
   "name": "react-typekit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component that injects Typekit script",
   "author": "Corey Larson <coreyleelarson@gmail.com> (http://github.com/coreyleelarson)",
   "license": "MIT",
@@ -17,8 +17,9 @@
   ],
   "scripts": {
     "build": "npm run clean && npm run build:lib",
-    "build:lib": "babel ./src --out-dir ./lib",
+    "build:lib": "babel ./src --out-dir ./lib --ignore '**/*.spec.js'",
     "clean": "rimraf lib",
+    "lint": "eslint ./src/**",
     "prepublish": "npm run clean && npm run build",
     "test": "mocha ./src/**/*.spec.js --compilers js:babel-register"
   },
