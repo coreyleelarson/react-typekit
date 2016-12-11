@@ -1,0 +1,6 @@
+{
+  "presets": ["latest", "react"],
+  "ignore": [
+    "**/*.spec.js"
+  ]
+}

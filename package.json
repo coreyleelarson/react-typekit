@@ -1,0 +1,43 @@
+{
+  "name": "react-typekit",
+  "version": "1.0.0",
+  "description": "React component that injects Typekit script",
+  "author": "Corey Larson <coreyleelarson@gmail.com> (http://github.com/coreyleelarson)",
+  "license": "MIT",
+  "main": "./lib/Typekit.js",
+  "scripts": {
+    "build": "npm run clean && npm run build:lib",
+    "build:lib": "babel ./src --out-dir ./lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build",
+    "test": "mocha ./src/**/*.spec.js --compilers js:babel-register"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "adobe",
+    "typekit"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.6.0",
+    "eslint": "^3.12.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "mocha": "^3.2.0",
+    "react": "^15.4.1",
+    "react-addons-test-utils": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "rimraf": "^2.5.4"
+  },
+  "peerDependencies": {
+    "react": "^15.4.1"
+  }
+}
