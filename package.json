@@ -1,6 +1,6 @@
 {
   "name": "react-typekit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component that injects Typekit script",
   "author": "Corey Larson <coreyleelarson@gmail.com> (http://github.com/coreyleelarson)",
   "license": "MIT",
