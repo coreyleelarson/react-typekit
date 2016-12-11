@@ -1,4 +1,6 @@
 # React Typekit
+[![npm](https://img.shields.io/npm/v/react-typekit.svg?style=flat-square)](https://www.npmjs.com/package/react-typekit)
+[![Build Status](https://travis-ci.org/coreyleelarson/react-typekit.svg?branch=master)](https://travis-ci.org/coreyleelarson/react-typekit)
 
 This React component will generate the Adobe Typekit script required to load your webfont bundles. Though it can be used anywhere, this works great for isomorphic/universal React applications that render the entire DOM structure in React components.
 
