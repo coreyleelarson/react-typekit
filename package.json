@@ -5,12 +5,9 @@
   "author": "Corey Larson <coreyleelarson@gmail.com> (http://github.com/coreyleelarson)",
   "license": "MIT",
   "main": "./lib/Typekit.js",
-  "scripts": {
-    "build": "npm run clean && npm run build:lib",
-    "build:lib": "babel ./src --out-dir ./lib",
-    "clean": "rimraf lib",
-    "prepublish": "npm run clean && npm run build",
-    "test": "mocha ./src/**/*.spec.js --compilers js:babel-register"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coreyleelarson/react-typekit"
   },
   "keywords": [
     "react",
@@ -18,6 +15,13 @@
     "adobe",
     "typekit"
   ],
+  "scripts": {
+    "build": "npm run clean && npm run build:lib",
+    "build:lib": "babel ./src --out-dir ./lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build",
+    "test": "mocha ./src/**/*.spec.js --compilers js:babel-register"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
@@ -38,6 +42,6 @@
     "rimraf": "^2.5.4"
   },
   "peerDependencies": {
-    "react": "^15.4.1"
+    "react": ">= 15.0.0"
   }
 }
