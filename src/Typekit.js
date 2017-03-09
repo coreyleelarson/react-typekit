@@ -1,11 +1,23 @@
-/* eslint react/no-danger: 0 */
-import React, { PropTypes } from 'react';
+import { Component, PropTypes } from 'react';
 import buildScript from './utilities/buildScript';
 
-const Typekit = ({ kitId }) => {
-  const script = buildScript(kitId);
-  return kitId ? (<script dangerouslySetInnerHTML={{ __html: script }} />) : false;
-};
+class Typekit extends Component {
+  componentDidMount() {
+    const is_rendered = document.querySelectorAll('.react-typekit').length > 0;
+    if (!is_rendered) {
+      const { kitId } = this.props;
+      const script = document.createElement('script');
+      script.className = 'react-typekit';
+      script.async = true;
+      script.innerHTML = buildScript(kitId);
+      document.body.appendChild(script);
+    }
+  }
+
+  render() {
+    return false;
+  }
+}
 
 Typekit.propTypes = {
   kitId: PropTypes.string,

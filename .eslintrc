@@ -1,15 +1,17 @@
 {
-  "parser": "babel-eslint",
-  "extends": "airbnb",
-  "env": {
-    "mocha": true,
-    "node": true
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
   },
-  "rules": {
-    "global-require": 0,
-    "import/no-extraneous-dependencies": 0,
-    "no-unused-vars": 1,
-    "react/jsx-filename-extension": 0,
-    "react/forbid-prop-types": 0
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "mocha": true  
   }
 }
