@@ -1,6 +1,6 @@
 import includes from 'lodash/includes';
 import split from 'lodash/split';
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import buildScript from './utilities/buildScript';
 
 class Typekit extends Component {
@@ -26,9 +26,5 @@ class Typekit extends Component {
     ) : false;
   }
 }
-
-Typekit.propTypes = {
-  kitId: PropTypes.string,
-};
 
 export default Typekit;
