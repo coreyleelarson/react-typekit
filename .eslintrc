@@ -14,5 +14,8 @@
     "browser": true,
     "mocha": true,
     "node": true
+  },
+  "rules": {
+    "react/prop-types": 0
   }
 }
