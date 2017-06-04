@@ -6,8 +6,8 @@ import buildScript from './utilities/buildScript';
 class Typekit extends Component {
   componentDidMount() {
     // If typekit has not yet been executed, force it.
-    const htmlClasses = document.querySelector('html').className;
-    const isLoaded = includes(split(htmlClasses, ' '), 'wf-loading', 'wf-active', 'wf-inactive');
+    const htmlClasses = split(document.querySelector('html').className, ' ');
+    const isLoaded = includes(htmlClasses, 'wf-loading') || includes(htmlClasses, 'wf-active') || includes(htmlClasses, 'wf-inactive');
     if (this.script && !isLoaded) {
       const { kitId } = this.props;
       const script = document.createElement('script');
