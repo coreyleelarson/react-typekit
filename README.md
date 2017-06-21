@@ -5,8 +5,13 @@
 This React component will generate the Adobe Typekit script required to load your webfont bundles. Though it can be used anywhere, this works great for isomorphic/universal React applications that render the entire DOM structure in React components.
 
 ## Installation
-```
+**w/ NPM**
+```bash
 npm install --save react-typekit
+```
+**w/ Yarn**
+```bash
+yarn add react-typekit
 ```
 
 ## Usage

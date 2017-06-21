@@ -1,5 +1,6 @@
 import intersection from 'lodash/intersection';
 import split from 'lodash/split';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import buildScript from './utilities/buildScript';
 
@@ -27,5 +28,9 @@ class Typekit extends Component {
     ) : false;
   }
 }
+
+Typekit.propTypes = {
+  kitId: PropTypes.string
+};
 
 export default Typekit;
