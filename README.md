@@ -1,3 +1,6 @@
+#### DEPRECATED:
+_**This package is deprecated. There are now easier ways to embed Typekit fonts into your apps with a simple CSS include. This package uses the JS Embed Code method, but it provides no benefit over including the script yourself, and only causes issues if used incorrectly. Please read the [embed fonts](https://helpx.adobe.com/fonts/using/embed-codes.html) page for more information.**_
+
 # React Typekit
 [![npm](https://img.shields.io/npm/v/react-typekit.svg?style=flat-square)](https://www.npmjs.com/package/react-typekit)
 [![Build Status](https://travis-ci.org/coreyleelarson/react-typekit.svg?branch=master)](https://travis-ci.org/coreyleelarson/react-typekit)
